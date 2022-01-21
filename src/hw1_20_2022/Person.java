@@ -4,9 +4,9 @@ public class Person {
 	protected String name;
 	protected String id;
 	protected int yearOB;
-	
-	public Person () {
-		
+
+	public Person() {
+
 	}
 
 	public Person(String name, String id, int yearOB) {
@@ -38,12 +38,11 @@ public class Person {
 	public void setYearOB(int yearOB) {
 		this.yearOB = yearOB;
 	}
-	
-	public void print () {
+
+	public void print() {
 		System.out.println(this.name + ", " + this.id + ", " + this.yearOB);
 	}
-	
-	
+
 }
 
 //Kreirati klasu Osoba koja ima:
