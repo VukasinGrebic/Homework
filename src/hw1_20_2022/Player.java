@@ -20,8 +20,6 @@ public class Player extends Person {
 		this.position = position;
 		this.cards = new ArrayList<Card>();
 	}
-	
-	
 
 	public ArrayList<Card> getCards() {
 		return cards;
@@ -51,13 +49,11 @@ public class Player extends Person {
 		this.isCaptain = isCaptain;
 	}
 
-
-	
 	public void addCard(Card card) {
 		this.cards.add(card);
 	}
-	
-	public int YellowCard () {
+
+	public int YellowCard() {
 		int counter = 0;
 		for (int i = 0; i < cards.size(); i++) {
 			if (this.cards.get(i).getType().equals("Yellow")) {
@@ -65,10 +61,10 @@ public class Player extends Person {
 			}
 		}
 		return counter;
-		
+
 	}
-	
-	public int RedCard () {
+
+	public int RedCard() {
 		int counter = 0;
 		for (int i = 0; i < cards.size(); i++) {
 			if (this.cards.get(i).getType().equals("Red")) {
@@ -76,9 +72,9 @@ public class Player extends Person {
 			}
 		}
 		return counter;
-		
+
 	}
-	
+
 	public void print() {
 		super.print();
 		System.out.println(this.number + ", " + this.position);
